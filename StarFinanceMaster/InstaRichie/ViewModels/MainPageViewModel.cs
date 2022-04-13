@@ -56,7 +56,8 @@ namespace StartFinance.ViewModels
 
         public void GotoAbout() =>
             NavigationService.Navigate(typeof(Views.SettingsPage), 2);
-
     }
+
 }
+
 
