@@ -180,17 +180,17 @@ namespace StartFinance.Views
 
         }
 
-        private async void ClearAppointment_Click(object sender, RoutedEventArgs e)
+        private void ClearAppointment_Click(object sender, RoutedEventArgs e)
         {
             EventName.Text = "";
             Location.Text = "";
             EventDate.Date = null;
             StartTime.SelectedTime = null;
-            EndTime.SelectedTime= null;
+            EndTime.SelectedTime = null;
 
-            
 
-            
+
+
 
 
         }

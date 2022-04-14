@@ -12,7 +12,7 @@
       xmlns:vm="using:StartFinance.ViewModels" mc:Ignorable="d">
 
     <Page.DataContext>
-        <vm:MainPageViewModel x:Name="ViewModel" />
+        <vm:MainPageViewModel x:Name="ViewModel"/>
     </Page.DataContext>
 
     <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">

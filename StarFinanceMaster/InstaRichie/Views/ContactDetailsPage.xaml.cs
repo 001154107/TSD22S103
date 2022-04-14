@@ -1,20 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 using SQLite.Net;
-using StartFinance.Models;
 using Windows.UI.Popups;
+using StartFinance.Models;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -23,9 +14,9 @@ namespace StartFinance.Views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class ContactDetails : Page
+    public sealed partial class ContactDetailsPage : Page
     {
-        QLiteConnection conn;  // adding an SQLite connection
+        SQLiteConnection conn;  // adding an SQLite connection
         string path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "Findata.sqlite");
 
         public int ContactDetailsId { get; private set; }
@@ -34,7 +25,7 @@ namespace StartFinance.Views
         {
             Results();
         }
-        public ContactDetails()
+        public ContactDetailsPage()
         {
 
             this.InitializeComponent();
@@ -68,7 +59,7 @@ namespace StartFinance.Views
             string Address1 = Address.Text.ToString();
             try
             {
-                if ((ContactName1 == "") || (Phone1 == "") || (Address1 == "" || (DateOfBirth1 == "") || (Email1 == ""))
+                if ((ContactName1 == "") || (Phone1 == "") || (Address1 == "") || (DateOfBirth1 == "") || (Email1 == ""))
                 {
                     MessageDialog dialog = new MessageDialog("Error! Must enter: Contact Name,DateOfBirth, Email, Phone, Address");
                     await dialog.ShowAsync();
@@ -193,6 +184,10 @@ namespace StartFinance.Views
 
 
 
+
+        }
+        private void ClearContactDetails_Click(object sender, RoutedEventArgs e)
+        {
 
         }
 
