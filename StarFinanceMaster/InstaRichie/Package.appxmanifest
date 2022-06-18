@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="32458featapps.InstaRichie" Publisher="CN=lau" Version="3.1.20.0" />
-  <mp:PhoneIdentity PhoneProductId="55315fcf-abdd-4acd-aa68-afdab1b5cfbf" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="24720TAFESA.StartFinance" Publisher="CN=DA0AE4C1-E368-4661-BF94-D1AF80337B3A" Version="3.1.22.0" />
+  <mp:PhoneIdentity PhoneProductId="4e713047-8e8a-4d56-9316-f176467c26dc" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>Start Finance</DisplayName>
-    <PublisherDisplayName>Feat Apps</PublisherDisplayName>
+    <DisplayName>StartFinance</DisplayName>
+    <PublisherDisplayName>TAFESA</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Start_Finance.App">
-      <uap:VisualElements DisplayName="Start Finance" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Sample" BackgroundColor="orange">
+      <uap:VisualElements DisplayName="StartFinance" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Sample" BackgroundColor="orange">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png">
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square150x150Logo" />
