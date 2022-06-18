@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppInstaller
+	Uri="file:///C:/5TSD/StartFinanceInstaller2/Start Finance.appinstaller"
+	Version="3.1.23.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
+	<MainBundle
+		Name="24720TAFESA.StartFinance"
+		Version="3.1.23.0"
+		Publisher="CN=ITWorks"
+		Uri="file:///C:/5TSD/StartFinanceInstaller2/Start Finance_3.1.23.0_Test/Start Finance_3.1.23.0_x64.msixbundle" />
+	<Dependencies>
+		<Package
+			Name="Microsoft.VCLibs.140.00"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x64"
+			Uri="file:///C:/5TSD/StartFinanceInstaller2/Start Finance_3.1.23.0_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.appx"
+			Version="14.0.30704.0" />
+		<Package
+			Name="Microsoft.NET.Native.Framework.1.3"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x64"
+			Uri="file:///C:/5TSD/StartFinanceInstaller2/Start Finance_3.1.23.0_Test/Dependencies/x64/Microsoft.NET.Native.Framework.1.3.appx"
+			Version="1.3.24211.0" />
+		<Package
+			Name="Microsoft.NET.Native.Runtime.1.4"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x64"
+			Uri="file:///C:/5TSD/StartFinanceInstaller2/Start Finance_3.1.23.0_Test/Dependencies/x64/Microsoft.NET.Native.Runtime.1.4.appx"
+			Version="1.4.24201.0" />
+	</Dependencies>
+	<UpdateSettings>
+		<OnLaunch
+			HoursBetweenUpdateChecks="0" />
+	</UpdateSettings>
+</AppInstaller>
